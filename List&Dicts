@@ -1,0 +1,48 @@
+# numbers = [1,2,3,4,5,"Hello", True]
+# print(numbers[6])
+
+numbers = [1,2,3,4,5]
+numbers[1] = 22
+numbers.append(55)
+numbers.remove(3)
+
+
+print(numbers)
+print(len(numbers))
+
+#Slicing lists
+numbers = [1,2,3,4,5]
+#          0 1 2 3 4
+print(numbers[1:3])
+print(numbers[::2])
+print(numbers[::-1])
+print(numbers + [6,7,8])
+print(numbers * 2)
+
+#Dictionaries
+Student = {
+    "name" : "Benz",
+    "age" : 23,
+    "courses" : ["Math", "Computer", "IOT"]
+}
+
+print(Student["name"])
+Student["grade"] = "A"
+Student["age"] += 10
+print(Student)
+
+print(Student.keys())
+print(Student.values())
+print(Student.items())
+
+for key, value in Student.items():
+    print(f"{key}: {value}")
+
+
+#Set No duplicates
+unique_colors = {"red", "blue", "green", "green"}
+print("unique color: ", unique_colors)
+
+#tuples 
+coordinates = (10.5, 20.8)
+coordinates[0] = 11.4
